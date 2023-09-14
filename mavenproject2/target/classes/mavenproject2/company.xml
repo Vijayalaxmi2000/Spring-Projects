@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean name="company" class="mavenproject2.Company">
+	
+		<!-- Value as element -->
+		
+		<property name="companyId" value="111"> </property>
+		<property name="companyName" value="Jspiders"> </property>
+		<property name="location" value="Bengalore"> </property>
+		
+	</bean>
+	<!-- P-Schema -->
+	<bean name="ABC" class="mavenproject2.Company"
+	 p:companyId="115" p:companyName="ty" p:location="Bengalore">
+	</bean>
+	
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
